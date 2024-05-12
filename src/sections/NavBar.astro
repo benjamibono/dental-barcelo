@@ -1,13 +1,16 @@
-<nav class="sticky top-0 pb-20 pt-12 h-24 backdrop-blur-sm">
-  <ul class="flex space-x-10 justify-end font-medium">
-    <li><a href="#" class="text-primary">Inicio</a></li>
-    <li><a href="/#servicios" class="text-primary">Servicios</a></li>
-    <li><a href="/#equipo" class="text-primary">Equipo</a></li>
-    <li><a href="/#galeria" class="text-primary">Galería</a></li>
-    <li><a href="#" class="text-primary">Precios</a></li>
-    <li><a href="#" class="text-primary">Contacto</a></li>
-  </ul>
+<nav class="sticky top-0 pb-36 h-24 backdrop-blur-sm z-10">
+  <div class="flex justify-between items-center">
+    <img src="src/components/images/logo.png" class="h-16 pl-6" />
+    <ul class="flex space-x-10 justify-end font-medium">
+      <li><a href="#" class="text-primary">Inicio</a></li>
+      <li><a href="/#servicios" class="text-primary">Servicios</a></li>
+      <li><a href="/#equipo" class="text-primary">Equipo</a></li>
+      <li><a href="/#galeria" class="text-primary">Galería</a></li>
+      <li><a href="#" class="text-primary">Contacto</a></li>
+    </ul>
+  </div>
 </nav>
+
 <style>
   li:hover {
     --tw-text-opacity: 1;
@@ -23,5 +26,9 @@
         margin-bottom: 1rem;
       }
     }
+  }
+  img:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
   }
 </style>
