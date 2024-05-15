@@ -13,6 +13,8 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@midudev/tailwind-animations": "^0.0.7",
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
     "astro": "^4.8.2",
     "install": "^0.13.0",
     "node": "^20.13.1",
