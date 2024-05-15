@@ -11,13 +11,13 @@ const { imagePath, altText } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
-if (!images[imagePath]) {
-  console.error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`);
-  // Handle the error or display a fallback image
-}
-
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+  );
 ---
 
-<div class="">
-  {images[imagePath] && <Image src={images[imagePath]()} alt={altText} />}
-</div>
+  <div class="">
+    {images[imagePath] && <Image src={images[imagePath]()} alt={altText} />}
+  </div>
+
