@@ -18,18 +18,25 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <div class="mx-auto min-h-screen max-w-6xl md:max-w-full pt-10 ">
+    <div class="mx-auto min-h-screen max-w-6xl md:max-w-full pt-10">
       <slot />
     </div>
     <SpeedInsights />
   </body>
 </html>
 <style is:global>
+  :root {
+    --color-primary: #2e211c;
+    --color-secondary: #574137;
+    --color-accent: #738ea0;
+    --background-color: #f1ece3;
+  }
   html {
     font-family: "Montserrat Variable", system-ui, sans-serif;
-    background: #ddd;
-    color: #13151a;
-    secondary: #13151a;
     scrollbar-gutter: stable;
+    background-color: var(--background-color);
+  }
+  body {
+    color: var(--color-primary);
   }
 </style>
