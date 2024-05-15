@@ -1,3 +1,7 @@
+---
+import Image from '../components/Images.astro'
+---
+
 <section id="equipo">
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
   <div class="item">
@@ -15,11 +19,7 @@
   </div>
   <div class="item">
     <div class="relative overflow-hidden p-2">
-      <img
-        class="relative mx-auto max-w-[170px] rounded-full zoom"
-        src="src/components/crew/dra-ligia.webp"
-        alt="Doctora en odontología general y ortodoncia"
-      />
+      <Image imagePath="../assets/conchi.webp" altText="Dueña y gerente de la clínica" />
     </div>
     <div class="mx-auto text-center">
       <h4 class="font-semibold text-base p-2">Dra. Ligia Marcondes</h4>
@@ -61,7 +61,7 @@
     <div class="relative overflow-hidden p-2">
       <img
         class="relative mx-auto max-w-[170px] rounded-full zoom"
-        src="/src/components/crew/dra-tamara.webp"
+        src="/components/crew/dra-tamara.webp"
         alt="Doctora en ortodoncia"
       />
     </div>
