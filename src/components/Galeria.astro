@@ -1,6 +1,6 @@
 <section id="galeria" class="pt-28 px-4 sm:px-16">
   <h2 class="flex justify-center pb-6 font-semibold text-3xl">Galería</h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-1 ">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
     <div class="overflow-hidden rounded-lg">
       <img class="zoom" src="/image1.webp" alt="sala de espera" />
     </div>
@@ -22,12 +22,17 @@
   </div>
 </section>
 
-  <style>
-    .zoom {
-      transition: all 0.5s ease;
+<style>
+  #galeria {
+    @media (min-width: 1400px) {
+    margin: 0% 10%
     }
+  }
+  .zoom {
+    transition: all 0.5s ease;
+  }
 
-    .zoom:hover {
-      transform: scale(1.2);
-    }
-  </style>
+  .zoom:hover {
+    transform: scale(1.2);
+  }
+</style>
