@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+
+Host: www.dentalbarcelo.com
+
+Sitemap: http://www.dentalbarcelo.com/sitemap.xml
