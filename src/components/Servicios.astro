@@ -1,5 +1,5 @@
-<section id="servicios" class="pt-4 sm:px-8 sm:pt-20 xl:mx-48">
-  <div class="servicios-grid grid grid-cols-2 md:grid-cols-3 pt-5 gap-5 sm:gap-10 xl:mx-16">
+<section id="servicios" class="pt-4 sm:px-8 sm:pt-20 xl:mx-36">
+  <div class="servicios-grid grid grid-cols-2 md:grid-cols-3 pt-5 px-2 gap-5 sm:gap-10 xl:mx-16">
     <div class="servicio">
       <h4>Odontología General</h4>
       <ul>
@@ -62,9 +62,14 @@
     padding: 10px;
     font-size: 10px;
     box-shadow: -10px 10px 4px 0px rgba(0, 0, 0, 0.25);
-    min-width: 233px;
     min-height: 153px;
   }
+
+  @media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
   h4 {
     font-size: 18px;
     font-weight: 500;
