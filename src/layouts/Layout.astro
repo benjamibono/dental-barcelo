@@ -17,13 +17,18 @@ const { title } = Astro.props;
       content="Web de la Clínica Dental Barcelo, Dentista en El Puerto de Santa María donde encontrarás todos los servicios de odontología y ortodoncia que necesites al mejor precio."
     />
     <meta name="viewport" content="width=device-width" />
-    <meta name="keywords" content="Dentista, Ortodoncista, El Puerto de Santa María" />
+    <meta
+      name="keywords"
+      content="Dentista, Ortodoncista, El Puerto de Santa María"
+    />
     <link rel="canonical" href="https://dentalbarcelo.com" />
     <link rel="icon" href="/favicon.svg" type="image/x-icon" />
     <title>{title}</title>
   </head>
   <body>
-    <div class="mx-auto min-h-screen max-w-6xl md:max-w-full">
+    <div
+      class="mx-auto min-h-screen max-w-6xl md:max-w-full"
+    >
       <slot />
     </div>
     <SpeedInsights />

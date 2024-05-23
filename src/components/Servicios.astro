@@ -1,88 +1,124 @@
 <section id="servicios" class="pt-4 sm:px-8 sm:pt-20 xl:mx-36">
-  <div class="servicios-grid grid grid-cols-2 md:grid-cols-3 pt-5 px-2 gap-5 sm:gap-10 xl:mx-16">
+  <div
+    class="servicios-grid grid grid-cols-2 md:grid-cols-3 pt-5 px-2 gap-5 sm:gap-10 xl:mx-16"
+  >
     <div class="servicio">
-      <h4>Odontología General</h4>
+      <h4 class="animate-blurred-fade-in">Odontología General</h4>
       <ul>
-        <li>Odontología preventiva</li>
-        <li>Periodoncia</li>
-        <li>Rehabilitación de prótesis completas</li>
-      </ul>
-    </div>
-    <div class="servicio">
-      <h4>Ortodoncia</h4>
-      <ul>
-        <li>Brackets convencionales</li>
-        <li>Brackets Autoligados</li>
-        <li>
-          <a target="external _blank" rel="noopener" href="https://www.quicksmile.es"
-            >Invisalign / QuickSmile</a>
+        <li class="animate-blurred-fade-in animate-delay-500">
+          Odontología preventiva
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-1000">Periodoncia</li>
+        <li class="animate-blurred-fade-in animate-delay-[1.5s]">
+          Rehabilitación de prótesis completas
         </li>
       </ul>
     </div>
     <div class="servicio">
-      <h4>Implantología</h4>
+      <h4 class="animate-blurred-fade-in">Ortodoncia</h4>
       <ul>
-        <li>Implantes completos</li>
-        <li>Prótesis sobre implantes</li>
-        <li>Puentes sobre implantes</li>
+        <li class="animate-blurred-fade-in animate-delay-500">
+          Brackets convencionales
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-1000">
+          Brackets Autoligados
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-[1.5s]">
+          <a
+            target="external _blank"
+            rel="noopener"
+            href="https://www.quicksmile.es">Invisalign / QuickSmile</a
+          >
+        </li>
       </ul>
     </div>
     <div class="servicio">
-      <h4>Cirugía</h4>
+      <h4 class="animate-blurred-fade-in">Implantología</h4>
       <ul>
-        <li>Extracciones de terceros molares</li>
-        <li>Injerto de hueso</li>
-        <li>Levantamiento de seno</li>
+        <li class="animate-blurred-fade-in animate-delay-500">
+          Implantes completos
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-1000">
+          Prótesis sobre implantes
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-[1.5s]">
+          Puentes sobre implantes
+        </li>
       </ul>
     </div>
     <div class="servicio">
-      <h4>Estética</h4>
+      <h4 class="animate-blurred-fade-in">Cirugía</h4>
       <ul>
-        <li>Blanqueamientos</li>
-        <li>Ácido Hialurónico</li>
-        <li>Estética dental</li>
+        <li class="animate-blurred-fade-in animate-delay-500">
+          Extracciones de terceros molares
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-1000">
+          Injerto de hueso
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-[1.5s]">
+          Levantamiento de seno
+        </li>
       </ul>
     </div>
     <div class="servicio">
-      <h4>Otros:</h4>
+      <h4 class="animate-blurred-fade-in">Estética</h4>
       <ul>
-        <li>Odontopediatría</li>
-        <li>Endodoncias</li>
-        <li>Férulas de descarga</li>
+        <li class="animate-blurred-fade-in animate-delay-500">
+          Blanqueamientos
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-1000">
+          Ácido Hialurónico
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-[1.5s]">
+          Estética dental
+        </li>
+      </ul>
+    </div>
+    <div class="servicio">
+      <h4 class="animate-blurred-fade-in">Otros:</h4>
+      <ul>
+        <li class="animate-blurred-fade-in animate-delay-500">
+          Odontopediatría
+        </li>
+        <li class="animate-blurred-fade-in animate-delay-1000">Endodoncias</li>
+        <li class="animate-blurred-fade-in animate-delay-[1.5s]">
+          Férulas de descarga
+        </li>
+      </ul>
     </div>
   </div>
+
+  <style>
+    .servicios-grid {
+    }
+
+    .servicio {
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 10px;
+      box-shadow: -10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+      min-height: 153px;
+    }
+
+    @media (min-width: 640px) {
+      .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      padding-bottom: 10px;
+    }
+    li {
+      font-size: 16px;
+      color: #585858;
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    li:hover {
+      text-decoration: underline;
+      mouse: pointer;
+    }
+  </style>
 </section>
-
-<style>
-  .servicios-grid {
-  }
-
-  .servicio {
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 10px;
-    box-shadow: -10px 10px 4px 0px rgba(0, 0, 0, 0.25);
-    min-height: 153px;
-  }
-
-  @media (min-width: 640px) {
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-  h4 {
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 10px;
-  }
-  li {
-    font-size: 16px;
-    color: #585858;
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  li:hover {
-    text-decoration: underline;
-    mouse: pointer;
-  }
-</style>
