@@ -16,7 +16,7 @@
     "@midudev/tailwind-animations": "^0.0.7",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "astro": "^4.8.2",
+    "astro": "^4.9.1",
     "install": "^0.13.0",
     "node": "^20.13.1",
     "npm": "^10.7.0",
