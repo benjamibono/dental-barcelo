@@ -1,7 +1,6 @@
 User-agent: *
-
-Disallow: /wp-admin/
-
-Host: www.dentalbarcelo.com
+Disallow: /admin/
+Disallow: /login/
+Allow: /
 
 Sitemap: http://www.dentalbarcelo.com/sitemap.xml
