@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import NavBar from "../components/NavBar.astro";
 import Intro from "../components/Intro.astro";
 import Servicios from "../components/Servicios.astro";
 import Equipo from "../components/Equipo.astro";
@@ -10,11 +9,12 @@ import Cambios from "../components/Cambios.astro";
 import Precios from "../components/Precios.astro";
 import Opiniones from "../components/Opiniones.astro";
 import Footer from "../components/Footer.astro";
+import Header from "@/components/Header.astro";
 ---
 
 <Layout title="Clínica Dental Barcelo, Dentista en El Puerto de Santa María">
 
-  <NavBar />
+  <Header />
   <main>
     <Intro />
     <Servicios />
