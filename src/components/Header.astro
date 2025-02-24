@@ -13,35 +13,42 @@
       </div>
       <div class="md:flex md:items-center md:gap-12">
         <nav aria-label="Global" class="hidden md:block">
-          <ul class="flex items-center gap-4 text-base text-[#2e211c]">
+          <ul class="flex items-center gap-4 lg:gap-8 text-base text-[#2e211c]">
             <li>
-              <a class="transition hover:text-gray-500/75" href="/#inicio"> Inicio </a>
+              <a
+                class="transition link--metis"
+                href="/#inicio"
+              >
+                Inicio
+              </a>
             </li>
 
             <li>
-              <a class="transition hover:text-gray-500/75" href="#servicios">
+              <a class="transition link--metis" href="#servicios">
                 Servicios
               </a>
             </li>
 
             <li>
-              <a class="transition hover:text-gray-500/75" href="#equipo"> Equipo </a>
+              <a class="transition link--metis" href="#equipo">
+                Equipo
+              </a>
             </li>
 
             <li>
-              <a class="transition hover:text-gray-500/75" href="#galeria">
+              <a class="transition link--metis" href="#galeria">
                 Galería
               </a>
             </li>
 
             <li>
-              <a class="transition hover:text-gray-500/75" href="#cambios">
+              <a class="transition link--metis" href="#cambios">
                 Resultados
               </a>
             </li>
 
             <li>
-              <a class="transition hover:text-gray-500/75" href="#footer">
+              <a class="transition link--metis" href="#footer">
                 Contacto
               </a>
             </li>
@@ -60,10 +67,6 @@
                 id="language-menu"
                 class="absolute hidden bg-white shadow-lg mt-2 rounded-md"
               >
-                <a
-                  href="/"
-                  class="block px-4 py-2 text-primary hover:bg-gray-200">🇪🇸</a
-                >
                 <a
                   href="/en"
                   class="block px-4 py-2 text-primary hover:bg-gray-200">🇬🇧</a
@@ -92,27 +95,44 @@
                 d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
-          <div id="mobile-menu" class="absolute right-0 bg-white mt-2 w-48 shadow-lg rounded-md hidden">
-            <ul class="flex flex-col items-start gap-4 text-base text-[#2e211c] p-4">
+          <div
+            id="mobile-menu"
+            class="absolute right-0 bg-white mt-2 w-48 shadow-lg rounded-md hidden"
+          >
+            <ul
+              class="flex flex-col items-start gap-4 text-base text-[#2e211c] p-4"
+            >
               <li>
-                <a class="transition hover:text-gray-500/75" href="/#inicio"> Inicio </a>
+                <a class="transition link--metis" href="/#inicio">
+                  Inicio
+                </a>
               </li>
               <li>
-                <a class="transition hover:text-gray-500/75" href="#servicios"> Servicios </a>
+                <a class="transition link--metis" href="#servicios">
+                  Servicios
+                </a>
               </li>
               <li>
-                <a class="transition hover:text-gray-500/75" href="#equipo"> Equipo </a>
+                <a class="transition link--metis" href="#equipo">
+                  Equipo
+                </a>
               </li>
               <li>
-                <a class="transition hover:text-gray-500/75" href="#galeria"> Galería </a>
+                <a class="transition link--metis" href="#galeria">
+                  Galería
+                </a>
               </li>
               <li>
-                <a class="transition hover:text-gray-500/75" href="#cambios"> Resultados </a>
+                <a class="transition link--metis" href="#cambios">
+                  Resultados
+                </a>
               </li>
               <li>
-                <a class="transition hover:text-gray-500/75" href="#footer"> Contacto </a>
+                <a class="transition link--metis" href="#footer">
+                  Contacto
+                </a>
               </li>
-              <li class="relative">
+              <li class="relative ">
                 <button
                   class="text-base leading-5 py-2 px-4 flex items-center space-x-2"
                   id="language-menu-button-mobile"
@@ -128,10 +148,6 @@
                   class="absolute hidden bg-white shadow-lg mt-2 rounded-md"
                 >
                   <a
-                    href="/"
-                    class="block px-4 py-2 text-primary hover:bg-gray-200">🇪🇸</a
-                  >
-                  <a
                     href="/en"
                     class="block px-4 py-2 text-primary hover:bg-gray-200">🇬🇧</a
                   >
@@ -144,3 +160,27 @@
     </div>
   </div>
 </header>
+
+<style>
+  .link--metis {
+    position: relative;
+    padding-bottom: 2px; /* Adjust to create space for the underline */
+  }
+  .link--metis::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+
+  .link--metis:hover::after {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+</style>
