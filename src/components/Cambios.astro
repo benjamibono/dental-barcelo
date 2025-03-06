@@ -201,30 +201,139 @@
       margin: 0% 10%;
     }
   }
+
+  .slider-animation {
+    animation: slideEffect 4s ease;
+  }
+
+  @keyframes slideEffect {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 50%;
+    }
+  }
+
+  .handle-animation {
+    animation: handleEffect 4s ease;
+  }
+
+  @keyframes handleEffect {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 50%;
+    }
+  }
+
+  .divider-animation {
+    animation: dividerEffect 4s ease;
+  }
+
+  @keyframes dividerEffect {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 50%;
+    }
+  }
+
+  .after-image-animation {
+    animation: imageEffect 4s ease;
+  }
+
+  @keyframes imageEffect {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    50% {
+      clip-path: inset(0 0% 0 0);
+    }
+    100% {
+      clip-path: inset(0 50% 0 0);
+    }
+  }
 </style>
 
 <script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sliders = entry.target.querySelectorAll(".slider");
+          sliders.forEach((slider) => {
+            const container = slider.parentElement;
+            if (!container) return;
+
+            const afterImage = container.querySelector(".after-image");
+            const divider = container.querySelector(".divider");
+            const handle = container.querySelector(".handle");
+
+            if (!afterImage || !divider || !handle) return;
+
+            slider.classList.add("slider-animation");
+            afterImage.classList.add("after-image-animation");
+            divider.classList.add("divider-animation");
+            handle.classList.add("handle-animation");
+
+            setTimeout(() => {
+              slider.classList.remove("slider-animation");
+              afterImage.classList.remove("after-image-animation");
+              divider.classList.remove("divider-animation");
+              handle.classList.remove("handle-animation");
+            }, 4000);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  const changes = document.getElementById("cambios");
+  if (changes) {
+    observer.observe(changes);
+  }
+
   document.querySelectorAll(".slider").forEach((slider) => {
     const container = slider.parentElement;
+    if (!container) return;
+
     const afterImage = container.querySelector(".after-image");
     const divider = container.querySelector(".divider");
     const handle = container.querySelector(".handle");
 
+    if (!afterImage || !divider || !handle) return;
+
     slider.addEventListener("input", (e) => {
-      const value = e.target.value;
+      const value = (e.target as HTMLInputElement).value;
       afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
       divider.style.left = `${value}%`;
       handle.style.left = `${value}%`;
     });
 
     slider.addEventListener("touchmove", (e) => {
-      const touch = e.touches[0];
+      const touch = (e as TouchEvent).touches[0];
       const rect = slider.getBoundingClientRect();
       const value = Math.max(
         0,
         Math.min(100, ((touch.clientX - rect.left) / rect.width) * 100)
       );
-      slider.value = value;
+      (slider as HTMLInputElement).value = value;
       afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
       divider.style.left = `${value}%`;
       handle.style.left = `${value}%`;

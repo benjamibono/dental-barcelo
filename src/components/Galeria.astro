@@ -77,4 +77,49 @@
   .zoom:hover {
     transform: scale(1.2);
   }
+
+  .zoom-animation {
+    animation: zoomEffect 1s ease;
+  }
+
+  @keyframes zoomEffect {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 </style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const images = entry.target.querySelectorAll(".zoom");
+          images.forEach((img, index) => {
+            setTimeout(() => {
+              img.classList.add("zoom-animation");
+              setTimeout(() => {
+                img.classList.remove("zoom-animation");
+              }, 1000);
+            }, index * 200);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  const gallery = document.getElementById("galeria");
+  if (gallery) {
+    observer.observe(gallery);
+  }
+</script>
