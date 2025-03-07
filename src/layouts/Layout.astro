@@ -1,6 +1,8 @@
 ---
 import "@fontsource-variable/montserrat";
 import SpeedInsights from "@vercel/speed-insights/astro";
+import "../styles/global.css";
+
 interface Props {
   title: string;
 }
@@ -65,19 +67,3 @@ const lang = title.includes("Clínica") ? "es" : "en";
     </div>
   </body>
 </html>
-<style is:global>
-  :root {
-    --color-primary: #2e211c;
-    --color-secondary: #574137;
-    --color-accent: #738ea0;
-    --background-color: #f1ece3;
-  }
-  html {
-    font-family: "Montserrat Variable", system-ui, sans-serif;
-    scrollbar-gutter: stable;
-    background-color: var(--background-color);
-  }
-  body {
-    color: var(--color-primary);
-  }
-</style>

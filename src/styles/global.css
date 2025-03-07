@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2e211c;
+  --color-secondary: #574137;
+  --color-accent: #738ea0;
+  --background-color: #f1ece3;
+}
+
+html {
+  font-family: "Montserrat Variable", system-ui, sans-serif;
+  scrollbar-gutter: stable;
+  background-color: var(--background-color);
+}
+
+body {
+  color: var(--color-primary);
+}
