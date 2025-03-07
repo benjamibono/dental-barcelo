@@ -26,12 +26,43 @@ const lang = title.includes("Clínica") ? "es" : "en";
     <link rel="icon" href="/favicon.svg" type="image/x-icon" />
     <title>{title}</title>
     <script src="/scripts/activeNavLinks.js" defer></script>
+    <script src="/scripts/cookieConsent.js" defer></script>
   </head>
   <body>
     <div class="mx-auto min-h-screen max-w-6xl md:max-w-full">
       <slot />
     </div>
     <SpeedInsights />
+
+    <!-- Aviso de Cookies -->
+    <div
+      id="cookie-consent"
+      class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg hidden"
+    >
+      <div
+        class="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <p class="text-sm text-gray-600">
+          Utilizamos cookies para mejorar tu experiencia en nuestro sitio web.
+          Al continuar navegando, aceptas nuestra
+          <a href="/politica-cookies" class="text-blue-600 hover:underline"
+            >Política de Cookies</a
+          >,
+          <a href="/politica-privacidad" class="text-blue-600 hover:underline"
+            >Política de Privacidad</a
+          > y
+          <a href="/terminos-condiciones" class="text-blue-600 hover:underline"
+            >Términos y Condiciones</a
+          >.
+        </p>
+        <button
+          id="accept-cookies"
+          class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
+        >
+          Aceptar
+        </button>
+      </div>
+    </div>
   </body>
 </html>
 <style is:global>
