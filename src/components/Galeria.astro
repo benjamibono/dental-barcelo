@@ -1,62 +1,67 @@
+---
+import {Image} from 'astro:assets'; import {
+  sillon, salaDeEspera, esterilizacion, instrumentos, ultrasonido, radiografia
+} from '../images';
+---
 <section id="galeria" class="pt-28 px-4 sm:px-16">
   <h2 class="flex justify-center pb-6 font-semibold text-3xl">Galería</h2>
   <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
     <div class="overflow-hidden rounded-lg">
-      <img
+      <Image
         class="zoom w-auto h-auto aspect-auto"
-        src="/sillon.webp"
-        decoding="async"
-        loading="lazy"
+        src={sillon}
+        width={800}
+        height={600}
         title="sillon de dentista"
         alt="sillon de dentista"
       />
     </div>
     <div class="overflow-hidden rounded-lg">
-      <img
+      <Image
         class="zoom w-auto h-auto aspect-auto"
-        src="/sala-de-espera.webp"
-        decoding="async"
-        loading="lazy"
+        src={salaDeEspera}
+        width={800}
+        height={600}
         title="sala de espera"
         alt="sala de espera"
       />
     </div>
     <div class="overflow-hidden rounded-lg">
-      <img
+      <Image
         class="zoom w-auto h-auto aspect-auto"
-        src="/esterilizacion.webp"
-        decoding="async"
-        loading="lazy"
+        src={esterilizacion}
+        width={800}
+        height={600}
         title="esterilizacion"
         alt="esterilizacion"
       />
     </div>
     <div class="overflow-hidden rounded-lg">
-      <img
+      <Image
         class="zoom w-auto h-auto aspect-auto"
-        src="/instrumentos.webp"
-        decoding="async"
-        loading="lazy"
+        src={instrumentos}
+        width={800}
+        height={600}
         title="instrumentos"
         alt="instrumentos"
       />
     </div>
     <div class="overflow-hidden rounded-lg">
-      <img
+      <Image
         class="zoom w-auto h-auto aspect-auto"
-        src="/ultrasonido.webp"
-        decoding="async"
-        loading="lazy"
+        src={ultrasonido}
+        width={800}
+        height={600}
         title="ultrasonido"
         alt="ultrasonido"
       />
     </div>
     <div class="overflow-hidden rounded-lg">
-      <img
+      <Image
         class="zoom w-auto h-auto aspect-auto"
-        src="/radiografia.webp"
-        decoding="async"
-        loading="lazy"
+        src={radiografia}
+        width={800}
+        height={600}
         title="radiografia"
         alt="radiografia"
       />

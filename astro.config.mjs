@@ -14,4 +14,9 @@ export default defineConfig({
     outDir: "dist",
   },
   // asegúrate de que las rutas estén configuradas correctamente
+  image: {
+    service: {
+      entrypoint: "astro/assets/services/sharp",
+    },
+  },
 });

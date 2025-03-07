@@ -1,3 +1,21 @@
+---
+import { Image } from "astro:assets";
+import {
+  sandraAntes,
+  sandraDespues,
+  ursuaAntes,
+  ursuaDespues,
+  ivanAntes,
+  ivanDespues,
+  pepeAntes,
+  pepeDespues,
+  tejadaAntes,
+  tejadaDespues,
+  infAntes,
+  infDespues,
+} from "../images";
+---
+
 <section id="cambios" class="pt-28 px-4 sm:px-16">
   <h2 class="flex justify-center pb-6 font-semibold text-3xl">
     Transforma tu sonrisa
@@ -6,15 +24,19 @@
     <div
       class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
     >
-      <img loading="lazy"
-        src="/SANDRA ANTES.webp"
+      <Image
+        src={sandraAntes}
         alt="Before"
+        width={800}
+        height={450}
         class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
       />
       <div class="absolute inset-0 w-auto h-auto overflow-hidden">
-        <img loading="lazy"
-          src="/SANDRA DESPUES.webp"
+        <Image
+          src={sandraDespues}
           alt="After"
+          width={800}
+          height={450}
           class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
         />
       </div>
@@ -38,46 +60,19 @@
     <div
       class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
     >
-      <img loading="lazy"
-        src="/URSUA ANTES.webp"
+      <Image
+        src={ursuaAntes}
         alt="Before"
+        width={800}
+        height={450}
         class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
       />
       <div class="absolute inset-0 w-auto h-auto overflow-hidden">
-        <img loading="lazy"
-          src="/URSUA DESPUES.webp"
+        <Image
+          src={ursuaDespues}
           alt="After"
-          class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
-        />
-      </div>
-      <div
-        class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
-      >
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
-      >
-      </div>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
-        aria-label="Deslizador de comparación de imágenes"
-      />
-    </div><div
-      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
-    >
-      <img loading="lazy"
-        src="/IVAN ANTES.webp"
-        alt="Before"
-        class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
-      />
-      <div class="absolute inset-0 w-auto h-auto overflow-hidden">
-        <img loading="lazy"
-          src="/IVAN DESPUES.webp"
-          alt="After"
+          width={800}
+          height={450}
           class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
         />
       </div>
@@ -101,15 +96,19 @@
     <div
       class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
     >
-      <img loading="lazy"
-        src="/PEPE ANTES.webp"
+      <Image
+        src={ivanAntes}
         alt="Before"
+        width={800}
+        height={450}
         class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
       />
       <div class="absolute inset-0 w-auto h-auto overflow-hidden">
-        <img loading="lazy"
-          src="/PEPE DESPUES.webp"
+        <Image
+          src={ivanDespues}
           alt="After"
+          width={800}
+          height={450}
           class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
         />
       </div>
@@ -129,18 +128,23 @@
         class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
         aria-label="Deslizador de comparación de imágenes"
       />
-    </div><div
+    </div>
+    <div
       class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
     >
-      <img loading="lazy"
-        src="/TEJADA ANTES.webp"
+      <Image
+        src={pepeAntes}
         alt="Before"
+        width={800}
+        height={450}
         class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
       />
       <div class="absolute inset-0 w-auto h-auto overflow-hidden">
-        <img loading="lazy"
-          src="/TEJADA DESPUES.webp"
+        <Image
+          src={pepeDespues}
           alt="After"
+          width={800}
+          height={450}
           class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
         />
       </div>
@@ -160,18 +164,59 @@
         class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
         aria-label="Deslizador de comparación de imágenes"
       />
-    </div><div
-      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9] slider-container"
+    </div>
+    <div
+      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
     >
-      <img loading="lazy"
-        src="/INF ANTES.webp"
+      <Image
+        src={tejadaAntes}
         alt="Before"
+        width={800}
+        height={450}
         class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
       />
       <div class="absolute inset-0 w-auto h-auto overflow-hidden">
-        <img loading="lazy"
-          src="/INF DESPUES.webp"
+        <Image
+          src={tejadaDespues}
           alt="After"
+          width={800}
+          height={450}
+          class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+        />
+      </div>
+      <div
+        class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+      >
+      </div>
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
+      >
+      </div>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+        class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
+        aria-label="Deslizador de comparación de imágenes"
+      />
+    </div>
+    <div
+      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
+    >
+      <Image
+        src={infAntes}
+        alt="Before"
+        width={800}
+        height={450}
+        class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
+      />
+      <div class="absolute inset-0 w-auto h-auto overflow-hidden">
+        <Image
+          src={infDespues}
+          alt="After"
+          width={800}
+          height={450}
           class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
         />
       </div>
@@ -309,21 +354,17 @@
     observer.observe(changes);
   }
 
-  document.querySelectorAll(".slider").forEach((slider) => {
-    const container = slider.parentElement;
-    if (!container) return;
+  const sliders = document.querySelectorAll(".slider");
+  const dividers = document.querySelectorAll(".divider");
+  const handles = document.querySelectorAll(".handle");
+  const afterImages = document.querySelectorAll(".after-image");
 
-    const afterImage = container.querySelector(".after-image");
-    const divider = container.querySelector(".divider");
-    const handle = container.querySelector(".handle");
-
-    if (!afterImage || !divider || !handle) return;
-
+  sliders.forEach((slider, index) => {
     slider.addEventListener("input", (e) => {
-      const value = (e.target as HTMLInputElement).value;
-      afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-      divider.style.left = `${value}%`;
-      handle.style.left = `${value}%`;
+      const value = e.target.value;
+      afterImages[index].style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+      dividers[index].style.left = `${value}%`;
+      handles[index].style.left = `${value}%`;
     });
 
     slider.addEventListener("touchmove", (e) => {
@@ -334,9 +375,9 @@
         Math.min(100, ((touch.clientX - rect.left) / rect.width) * 100)
       );
       (slider as HTMLInputElement).value = value;
-      afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
-      divider.style.left = `${value}%`;
-      handle.style.left = `${value}%`;
+      afterImages[index].style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+      dividers[index].style.left = `${value}%`;
+      handles[index].style.left = `${value}%`;
     });
   });
 </script>

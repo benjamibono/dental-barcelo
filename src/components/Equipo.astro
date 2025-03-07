@@ -1,3 +1,7 @@
+---
+import {Image} from 'astro:assets'; import { conchi, draLigia, draTamara, draIrene
+} from '../images';
+---
 <section id="equipo" class="pt-32 pb-24 xl:mx-48 animate-fade-in">
   <h2 class="flex justify-center pb-16 font-semibold text-2xl sm:text-3xl">
     Tu sonrisa, nuestra pasión
@@ -5,11 +9,11 @@
   <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
     <div class="relative">
       <div class="relative overflow-hidden rounded-full">
-        <img
+        <Image
           class="aspect-square relative mx-auto w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full zoom"
-          src="/conchi.webp"
-          decoding="async"
-          loading="lazy"
+          src={conchi}
+          width={200}
+          height={200}
           title="Foto de Conchi"
           alt="Dueña y gerente de la clínica prueba"
         />
@@ -21,11 +25,11 @@
     </div>
     <div class="relative">
       <div class="relative overflow-hidden rounded-full">
-        <img
+        <Image
           class="aspect-square relative mx-auto w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full zoom"
-          src="/dra-ligia.webp"
-          decoding="async"
-          loading="lazy"
+          src={draLigia}
+          width={200}
+          height={200}
           title="Foto de la doctora Ligia"
           alt="Doctora en odontología general y ortodoncia"
         />
@@ -68,11 +72,11 @@
     </div>
     <div class="relative">
       <div class="relative overflow-hidden rounded-full">
-        <img
+        <Image
           class="aspect-square relative mx-auto w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full zoom"
-          src="/dra-tamara.webp"
-          decoding="async"
-          loading="lazy"
+          src={draTamara}
+          width={200}
+          height={200}
           title="Foto de la doctora Tamara"
           alt="Doctora en ortodoncia"
         />
@@ -115,11 +119,11 @@
     </div>
     <div class="relative">
       <div class="relative overflow-hidden rounded-full">
-        <img
+        <Image
           class="aspect-square relative mx-auto w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full zoom"
-          src="/dra-irene.webp"
-          decoding="async"
-          loading="lazy"
+          src={draIrene}
+          width={200}
+          height={200}
           title="Foto de la doctora Irene"
           alt="Doctora en implantología y cirugía"
         />
