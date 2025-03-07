@@ -6,10 +6,11 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const lang = title.includes("Clínica") ? "es" : "en";
 ---
 
 <!doctype html>
-<html lang="es, en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta
