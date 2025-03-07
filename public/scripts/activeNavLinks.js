@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
       // Determine which footer section is present
       if (footerEnSection) {
-        currentSection = "#footeren";
+        currentSection = "#footer-en";
       } else if (footerSection) {
         currentSection = "#footer";
       }
