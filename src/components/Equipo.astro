@@ -1,12 +1,12 @@
-<section id="equipo" class="pt-36 xl:mx-48 animate-fade-in">
+<section id="equipo" class="pt-32 pb-24 xl:mx-48 animate-fade-in">
   <h2 class="flex justify-center pb-16 font-semibold text-2xl sm:text-3xl">
     Tu sonrisa, nuestra pasión
   </h2>
   <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-    <div class="item">
-      <div class="relative overflow-hidden p-4">
+    <div class="relative">
+      <div class="relative overflow-hidden rounded-full">
         <img
-          class="relative mx-auto max-w-[200px] w-auto h-auto rounded-full zoom"
+          class="aspect-square relative mx-auto max-w-[200px] w-auto h-auto rounded-full zoom"
           src="/conchi.webp"
           decoding="async"
           loading="lazy"
@@ -15,14 +15,14 @@
         />
       </div>
       <div class="mx-auto text-center">
-        <h3 class="font-semibold text-base p-4">Conchi López</h3>
+        <h3 class="font-semibold text-base">Conchi López</h3>
         <p class="text-base text-muted-400">Gerente, Auxiliar e Higienista</p>
       </div>
     </div>
-    <div class="item">
-      <div class="relative overflow-hidden p-4">
+    <div class="relative">
+      <div class="relative overflow-hidden rounded-full">
         <img
-          class="relative mx-auto max-w-[200px] w-auto h-auto rounded-full zoom"
+          class="aspect-square relative mx-auto max-w-[200px] w-auto h-auto rounded-full zoom"
           src="/dra-ligia.webp"
           decoding="async"
           loading="lazy"
@@ -31,7 +31,7 @@
         />
       </div>
       <div class="mx-auto text-center">
-        <h3 class="font-semibold text-base p-4">Dra. Ligia Marcondes</h3>
+        <h3 class="font-semibold text-base">Dra. Ligia Marcondes</h3>
         <p class="text-base text-muted-400">Odontología y Ortodoncia</p>
         <div class="flex items-center justify-center">
           <svg
@@ -66,10 +66,10 @@
         </div>
       </div>
     </div>
-    <div class="item">
-      <div class="relative overflow-hidden p-4">
+    <div class="relative">
+      <div class="relative overflow-hidden rounded-full">
         <img
-          class="relative mx-auto max-w-[200px] w-auto h-auto rounded-full zoom"
+          class="aspect-square relative mx-auto max-w-[200px] w-auto h-auto rounded-full zoom"
           src="/dra-tamara.webp"
           decoding="async"
           loading="lazy"
@@ -78,7 +78,7 @@
         />
       </div>
       <div class="mx-auto text-center">
-        <h3 class="font-semibold text-base p-4">Dra. Tamara Rodríguez</h3>
+        <h3 class="font-semibold text-base">Dra. Tamara Rodríguez</h3>
         <p class="text-base text-muted-400">Ortodoncia</p>
         <div class="flex items-center justify-center">
           <svg
@@ -113,10 +113,10 @@
         </div>
       </div>
     </div>
-    <div class="item">
-      <div class="relative overflow-hidden p-4">
+    <div class="relative">
+      <div class="relative overflow-hidden rounded-full">
         <img
-          class="relative mx-auto max-w-[200px] w-auto h-auto rounded-full zoom"
+          class="aspect-square relative mx-auto max-w-[200px] w-auto h-auto rounded-full zoom"
           src="/dra-irene.webp"
           decoding="async"
           loading="lazy"
@@ -125,7 +125,7 @@
         />
       </div>
       <div class="mx-auto text-center">
-        <h3 class="font-semibold text-base p-4">Dra. Irene Ruiz</h3>
+        <h3 class="font-semibold text-base">Dra. Irene Ruiz</h3>
         <p class="text-base text-muted-400">Implantología y Cirugía</p>
         <div class="flex items-center justify-center">
           <svg
@@ -161,24 +161,19 @@
       </div>
     </div>
   </div>
-
-  <style>
-    .item {
-      position: relative;
-      border-radius: 8px;
-    }
-    .zoom {
-      transition: all 0.3s ease;
-    }
-
-    .zoom:hover {
-      transform: scale(1.1);
-    }
-
-    svg {
-      width: 24px;
-      height: 24px;
-      item-align: center;
-    }
-  </style>
 </section>
+<style>
+  .zoom {
+    transition: all 0.3s ease;
+  }
+
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    item-align: center;
+  }
+</style>
