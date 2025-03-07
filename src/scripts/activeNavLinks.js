@@ -129,5 +129,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setActiveLink();
 
   // Set active link on scroll
-  window.addEventListener("scroll", setActiveLink);
+  window.addEventListener("scroll", setActiveLink, { passive: true });
 });
