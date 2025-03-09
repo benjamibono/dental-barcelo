@@ -1,6 +1,8 @@
 <section class="px-8">
   <div>
-    <h3 class="flex justify-center py-10 font-semibold sm:text-xl">
+    <h3
+      class="flex justify-center py-10 font-semibold text-2xl sm:text-3xl text-primary"
+    >
       Our patients support us
     </h3>
   </div>
@@ -487,29 +489,31 @@
           class="grid grid-cols-1 gap-x-8 gap-y-10 text-center sm:grid-cols-3"
         >
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-primary">
+            <dt class="text-lg leading-7 text-primary font-medium">
               Years of experience
             </dt>
             <dd
-              class="order-first text-3xl font-semibold tracking-tight text-primary sm:text-5xl"
+              class="order-first text-xl md:text-4xl font-semibold tracking-tight text-primary"
             >
               + 10
             </dd>
           </div>
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-primary">Happy Patients</dt>
+            <dt class="text-lg leading-7 text-primary font-medium">
+              Happy Patients
+            </dt>
             <dd
-              class="order-first text-3xl font-semibold tracking-tight text-primary sm:text-5xl"
+              class="order-first text-xl md:text-4xl font-semibold tracking-tight text-primary"
             >
               + 3600
             </dd>
           </div>
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-primary">
+            <dt class="text-lg leading-7 text-primary font-medium">
               Successful Treatments
             </dt>
             <dd
-              class="order-first text-3xl font-semibold tracking-tight text-primary sm:text-5xl"
+              class="order-first text-xl md:text-4xl font-semibold tracking-tight text-primary"
             >
               +15000
             </dd>
@@ -524,18 +528,48 @@
     position: relative;
     padding: 10px 0px;
     border-radius: 8px;
-    margin: 0 15%;
-    height: 16rem; /* Fixed height to prevent CLS */
+    margin: 0 5%;
+    height: auto;
+    min-height: 16rem;
+    max-height: 20rem;
+    overflow: auto;
   }
   .review {
-    position: absolute;
+    position: relative;
     width: 100%;
+    max-height: 12rem;
+    overflow: auto;
   }
   .mySlides {
     display: none;
   }
   .myPhotos {
     display: none;
+  }
+  @media (max-width: 640px) {
+    .review-container {
+      margin: 0 2%;
+    }
+    .review h4 {
+      font-size: 0.875rem;
+    }
+    .review p {
+      font-size: 0.75rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    .review-container {
+      margin: 0 3%;
+    }
+    .review h4 {
+      font-size: 1rem;
+    }
+    .review p {
+      font-size: 0.875rem;
+    }
+    dl dd {
+      font-size: 3.5rem; /* Adjust font size for iPad */
+    }
   }
 </style>
 
