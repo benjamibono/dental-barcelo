@@ -1,86 +1,101 @@
 ---
-import {Image} from 'astro:assets'; import {
-  sillon, salaDeEspera, esterilizacion, instrumentos, ultrasonido, radiografia
-} from '../images';
+import { Image } from "astro:assets";
+import {
+  sillon,
+  salaDeEspera,
+  esterilizacion,
+  instrumentos,
+  ultrasonido,
+  radiografia,
+} from "../images";
 ---
-<section id="galeria" class="pt-28 px-4 sm:px-16">
-  <h2 class="flex justify-center pb-6 font-semibold text-3xl">Galería</h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
-    <div class="overflow-hidden rounded-lg">
-      <Image
-        class="zoom w-auto h-auto aspect-auto"
-        src={sillon}
-        width={800}
-        height={600}
-        title="sillon de dentista"
-        alt="sillon de dentista"
-      />
+
+<div class="w-full">
+  <section id="galeria" class="py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center mb-12 sm:mb-16"
+    >
+      Galería
+    </h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
+    >
+      <div class="overflow-hidden rounded-xl shadow-md">
+        <Image
+          class="zoom w-full h-full object-cover aspect-[4/3]"
+          src={sillon}
+          width={800}
+          height={600}
+          title="Sillón dental"
+          alt="Moderno sillón dental equipado con la última tecnología"
+        />
+      </div>
+
+      <div class="overflow-hidden rounded-xl shadow-md">
+        <Image
+          class="zoom w-full h-full object-cover aspect-[4/3]"
+          src={salaDeEspera}
+          width={800}
+          height={600}
+          title="Sala de espera"
+          alt="Confortable sala de espera con ambiente acogedor"
+        />
+      </div>
+
+      <div class="overflow-hidden rounded-xl shadow-md">
+        <Image
+          class="zoom w-full h-full object-cover aspect-[4/3]"
+          src={esterilizacion}
+          width={800}
+          height={600}
+          title="Sala de esterilización"
+          alt="Moderna sala de esterilización con equipos de última generación"
+        />
+      </div>
+
+      <div class="overflow-hidden rounded-xl shadow-md">
+        <Image
+          class="zoom w-full h-full object-cover aspect-[4/3]"
+          src={instrumentos}
+          width={800}
+          height={600}
+          title="Instrumentos dentales"
+          alt="Instrumentos dentales de precisión esterilizados"
+        />
+      </div>
+
+      <div class="overflow-hidden rounded-xl shadow-md">
+        <Image
+          class="zoom w-full h-full object-cover aspect-[4/3]"
+          src={ultrasonido}
+          width={800}
+          height={600}
+          title="Equipo de ultrasonido"
+          alt="Equipo de ultrasonido para diagnóstico dental avanzado"
+        />
+      </div>
+
+      <div class="overflow-hidden rounded-xl shadow-md">
+        <Image
+          class="zoom w-full h-full object-cover aspect-[4/3]"
+          src={radiografia}
+          width={800}
+          height={600}
+          title="Equipo de radiografía"
+          alt="Equipo de radiografía digital para diagnóstico preciso"
+        />
+      </div>
     </div>
-    <div class="overflow-hidden rounded-lg">
-      <Image
-        class="zoom w-auto h-auto aspect-auto"
-        src={salaDeEspera}
-        width={800}
-        height={600}
-        title="sala de espera"
-        alt="sala de espera"
-      />
-    </div>
-    <div class="overflow-hidden rounded-lg">
-      <Image
-        class="zoom w-auto h-auto aspect-auto"
-        src={esterilizacion}
-        width={800}
-        height={600}
-        title="esterilizacion"
-        alt="esterilizacion"
-      />
-    </div>
-    <div class="overflow-hidden rounded-lg">
-      <Image
-        class="zoom w-auto h-auto aspect-auto"
-        src={instrumentos}
-        width={800}
-        height={600}
-        title="instrumentos"
-        alt="instrumentos"
-      />
-    </div>
-    <div class="overflow-hidden rounded-lg">
-      <Image
-        class="zoom w-auto h-auto aspect-auto"
-        src={ultrasonido}
-        width={800}
-        height={600}
-        title="ultrasonido"
-        alt="ultrasonido"
-      />
-    </div>
-    <div class="overflow-hidden rounded-lg">
-      <Image
-        class="zoom w-auto h-auto aspect-auto"
-        src={radiografia}
-        width={800}
-        height={600}
-        title="radiografia"
-        alt="radiografia"
-      />
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <style>
-  #galeria {
-    @media (min-width: 1400px) {
-      margin: 0% 10%;
-    }
-  }
   .zoom {
     transition: all 0.5s ease;
   }
 
   .zoom:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   .zoom-animation {
@@ -119,7 +134,8 @@ import {Image} from 'astro:assets'; import {
       });
     },
     {
-      threshold: 0.1,
+      threshold: 0.2,
+      rootMargin: "50px",
     }
   );
 

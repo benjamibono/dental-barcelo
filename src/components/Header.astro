@@ -4,17 +4,21 @@ import { logo } from "../images";
 ---
 
 <header class="sticky top-0 z-50 backdrop-blur-sm">
-  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-20 items-center justify-between">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <div class="flex h-16 md:h-20 items-center justify-between">
       <div class="flex-1 md:flex md:items-center md:gap-12">
-        <a class="block" href="#inicio">
+        <a
+          class="block"
+          href="#"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        >
           <span class="sr-only">Inicio</span>
           <Image
             src={logo}
             width={150}
             height={40}
             loading="eager"
-            class="h-10 pl-6 scale-85 md:scale-100 mx-auto"
+            class="h-10 pl-0 md:pl-6 scale-90 md:scale-100"
             alt="logo de la clínica"
           />
         </a>
@@ -22,36 +26,42 @@ import { logo } from "../images";
       <div class="md:flex md:items-center md:gap-12">
         <nav aria-label="Global" class="hidden md:block">
           <ul
-            class="flex items-center gap-4 lg:gap-8 text-base text-custom-dark"
+            class="flex items-center gap-6 lg:gap-8 text-sm lg:text-base text-custom-dark"
           >
             <li>
-              <a class="transition link--metis" href="#inicio"> Inicio </a>
+              <a class="transition link--metis py-1" href="#inicio"> Inicio </a>
             </li>
 
             <li>
-              <a class="transition link--metis" href="#servicios">
+              <a class="transition link--metis py-1" href="#servicios">
                 Servicios
               </a>
             </li>
 
             <li>
-              <a class="transition link--metis" href="#equipo"> Equipo </a>
+              <a class="transition link--metis py-1" href="#equipo"> Equipo </a>
             </li>
 
             <li>
-              <a class="transition link--metis" href="#galeria"> Galería </a>
+              <a class="transition link--metis py-1" href="#galeria">
+                Galería
+              </a>
             </li>
 
             <li>
-              <a class="transition link--metis" href="#cambios"> Resultados </a>
+              <a class="transition link--metis py-1" href="#cambios">
+                Resultados
+              </a>
             </li>
 
             <li>
-              <a class="transition link--metis" href="#footer"> Contacto </a>
+              <a class="transition link--metis py-1" href="#footer">
+                Contacto
+              </a>
             </li>
             <li class="relative">
               <button
-                class="text-base leading-5 py-2 px-4 flex items-center space-x-2"
+                class="text-sm lg:text-base py-2 px-3 flex items-center"
                 id="language-menu-button"
                 type="button"
                 aria-haspopup="true"
@@ -59,15 +69,15 @@ import { logo } from "../images";
                 aria-label="Cambiar idioma"
                 onclick="document.getElementById('language-menu').classList.toggle('hidden')"
               >
-                🇪🇸 ▼
+                🇪🇸 <span class="ml-1">▼</span>
               </button>
               <div
                 id="language-menu"
-                class="absolute hidden bg-white shadow-lg mt-2 rounded-md"
+                class="absolute right-0 hidden bg-white shadow-lg mt-2 rounded-md"
               >
                 <a
                   href="/en"
-                  class="block px-4 py-2 text-primary hover:bg-gray-200 hover:rounded-md"
+                  class="block px-4 py-2 text-sm hover:bg-gray-200 hover:rounded-md"
                   >🇬🇧</a
                 >
               </div>
@@ -77,7 +87,7 @@ import { logo } from "../images";
 
         <div class="block md:hidden">
           <button
-            class="rounded p-2 text-gray-600 transition hover:text-gray-600/75"
+            class="rounded p-2 text-gray-600 transition"
             aria-label="Abrir menú"
             onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
           >
@@ -97,55 +107,71 @@ import { logo } from "../images";
           </button>
           <div
             id="mobile-menu"
-            class="absolute right-0 bg-white mt-2 w-48 shadow-lg rounded-md hidden"
+            class="absolute right-4 top-full bg-white mt-2 w-56 shadow-lg rounded-md hidden"
           >
-            <ul
-              class="flex flex-col items-start gap-4 text-base text-custom-dark p-4"
-            >
-              <li>
-                <a class="transition link--metis" href="/#inicio"> Inicio </a>
+            <ul class="flex flex-col py-2">
+              <li class="block px-4 py-2">
+                <a
+                  class="inline-block transition link--metis"
+                  href="#inicio"
+                  onclick="document.getElementById('mobile-menu').classList.add('hidden'); return true;"
+                >
+                  Inicio
+                </a>
               </li>
-              <li>
-                <a class="transition link--metis" href="#servicios">
+              <li class="block px-4 py-2">
+                <a
+                  class="inline-block transition link--metis"
+                  href="#servicios"
+                  onclick="document.getElementById('mobile-menu').classList.add('hidden'); return true;"
+                >
                   Servicios
                 </a>
               </li>
-              <li>
-                <a class="transition link--metis" href="#equipo"> Equipo </a>
+              <li class="block px-4 py-2">
+                <a
+                  class="inline-block transition link--metis"
+                  href="#equipo"
+                  onclick="document.getElementById('mobile-menu').classList.add('hidden'); return true;"
+                >
+                  Equipo
+                </a>
               </li>
-              <li>
-                <a class="transition link--metis" href="#galeria"> Galería </a>
+              <li class="block px-4 py-2">
+                <a
+                  class="inline-block transition link--metis"
+                  href="#galeria"
+                  onclick="document.getElementById('mobile-menu').classList.add('hidden'); return true;"
+                >
+                  Galería
+                </a>
               </li>
-              <li>
-                <a class="transition link--metis" href="#cambios">
+              <li class="block px-4 py-2">
+                <a
+                  class="inline-block transition link--metis"
+                  href="#cambios"
+                  onclick="document.getElementById('mobile-menu').classList.add('hidden'); return true;"
+                >
                   Resultados
                 </a>
               </li>
-              <li>
-                <a class="transition link--metis" href="#footer"> Contacto </a>
+              <li class="block px-4 py-2">
+                <a
+                  class="inline-block transition link--metis"
+                  href="#footer"
+                  onclick="document.getElementById('mobile-menu').classList.add('hidden'); return true;"
+                >
+                  Contacto
+                </a>
               </li>
-              <li class="relative">
-                <button
-                  class="text-base leading-5 py-2 px-4 flex items-center space-x-2"
-                  id="language-menu-button-mobile"
-                  type="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  aria-label="Cambiar idioma"
-                  onclick="document.getElementById('language-menu-mobile').classList.toggle('hidden')"
+              <li class="relative border-t mt-2 pt-2 px-4 py-2">
+                <a
+                  href="/en"
+                  class="inline-block transition link--metis"
+                  onclick="document.getElementById('mobile-menu').classList.add('hidden'); return true;"
                 >
-                  🇪🇸 ▼
-                </button>
-                <div
-                  id="language-menu-mobile"
-                  class="absolute hidden bg-white shadow-lg mt-2 rounded-md"
+                  English 🇬🇧</a
                 >
-                  <a
-                    href="/en"
-                    class="block px-4 py-2 text-primary hover:bg-gray-200 hover:rounded-md"
-                    >🇬🇧</a
-                  >
-                </div>
               </li>
             </ul>
           </div>
@@ -158,7 +184,7 @@ import { logo } from "../images";
 <style>
   .link--metis {
     position: relative;
-    padding-bottom: 2px; /* Adjust to create space for the underline */
+    padding-bottom: 2px;
   }
   .link--metis::after {
     content: "";

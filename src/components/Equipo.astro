@@ -1,166 +1,209 @@
 ---
-import {Image} from 'astro:assets'; import { conchi, draLigia, draTamara, draIrene
-} from '../images';
+import { Image } from "astro:assets";
+import { conchi, draLigia, draTamara, draIrene } from "../images";
 ---
-<section id="equipo" class="pt-32 pb-24 xl:mx-48 animate-fade-in">
-  <h2 class="flex justify-center pb-16 font-semibold text-2xl sm:text-3xl">
+
+<section id="equipo" class="py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+  <h2
+    class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center mb-16"
+  >
     Tu sonrisa, nuestra pasión
   </h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-    <div class="relative">
-      <div class="relative overflow-hidden rounded-full">
-        <Image
-          class="aspect-square relative mx-auto w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full zoom"
-          src={conchi}
-          width={200}
-          height={200}
-          title="Foto de Conchi"
-          alt="Dueña y gerente de la clínica prueba"
-        />
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+    <div class="relative group">
+      <div
+        class="relative overflow-hidden rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl"
+      >
+        <div class="aspect-square overflow-hidden rounded-full">
+          <Image
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src={conchi}
+            width={300}
+            height={300}
+            title="Foto de Conchi"
+            alt="Dueña y gerente de la clínica prueba"
+          />
+        </div>
       </div>
-      <div class="mx-auto text-center">
-        <h3 class="font-semibold text-base">Conchi López</h3>
-        <p class="text-base text-muted-400">Gerente, Auxiliar e Higienista</p>
+      <div class="mt-6 text-center">
+        <h3
+          class="text-lg font-semibold text-gray-800 mb-2"
+        >
+          Conchi López
+        </h3>
+        <p class="text-sm sm:text-base lg:text-lg text-gray-600">
+          Gerente, Auxiliar e Higienista
+        </p>
       </div>
     </div>
-    <div class="relative">
-      <div class="relative overflow-hidden rounded-full">
-        <Image
-          class="aspect-square relative mx-auto w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full zoom"
-          src={draLigia}
-          width={200}
-          height={200}
-          title="Foto de la doctora Ligia"
-          alt="Doctora en odontología general y ortodoncia"
-        />
+
+    <div class="relative group">
+      <div
+        class="relative overflow-hidden rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl"
+      >
+        <div class="aspect-square overflow-hidden rounded-full">
+          <Image
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src={draLigia}
+            width={300}
+            height={300}
+            title="Foto de la doctora Ligia"
+            alt="Doctora en odontología general y ortodoncia"
+          />
+        </div>
       </div>
-      <div class="mx-auto text-center">
-        <h3 class="font-semibold text-base">Dra. Ligia Marcondes</h3>
-        <p class="text-base text-muted-400">Odontología y Ortodoncia</p>
-        <div class="flex items-center justify-center">
+      <div class="mt-6 text-center">
+        <h3
+          class="text-lg font-semibold text-gray-800 mb-2"
+        >
+          Dra. Ligia Marcondes
+        </h3>
+        <p class="text-sm sm:text-base lg:text-lg text-gray-600 mb-2">
+          General y Ortodoncia
+        </p>
+        <div class="flex items-center justify-center text-gray-600">
           <svg
+            class="w-4 h-4 sm:w-5 sm:h-5"
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
-            width="24px"
-            height="24px"
             viewBox="0 0 512.000000 512.000000"
             preserveAspectRatio="xMidYMid meet"
           >
             <g
               transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-              fill="#000000"
+              fill="currentColor"
               stroke="none"
             >
               <path
                 d="M1469 5065 c-154 -26 -360 -108 -490 -195 -194 -131 -345 -359 -396
-    -600 -26 -125 -24 -340 6 -489 58 -294 203 -626 399 -916 128 -188 171 -307
-    172 -467 0 -43 -9 -182 -21 -310 -50 -551 23 -1084 212 -1560 64 -161 181
-    -389 220 -428 65 -67 185 -78 274 -25 76 44 87 80 145 480 28 193 63 404 77
-    470 63 302 206 620 343 763 58 60 92 75 159 70 106 -8 194 -94 294 -287 142
-    -276 221 -592 297 -1201 25 -199 30 -216 78 -262 48 -46 69 -56 133 -64 128
-    -15 182 29 287 233 158 311 262 662 314 1063 18 142 18 726 -1 920 -12 130
-    -12 155 3 239 23 131 62 222 165 380 224 343 341 617 397 926 27 148 25 372
-    -4 488 -47 188 -131 338 -262 467 -179 176 -413 282 -690 311 -200 21 -379
-    -13 -590 -111 -191 -88 -276 -110 -429 -110 -130 0 -249 29 -423 103 -84 36
-    -183 74 -219 85 -136 42 -304 52 -450 27z"
+-600 -26 -125 -24 -340 6 -489 58 -294 203 -626 399 -916 128 -188 171 -307
+172 -467 0 -43 -9 -182 -21 -310 -50 -551 23 -1084 212 -1560 64 -161 181
+-389 220 -428 65 -67 185 -78 274 -25 76 44 87 80 145 480 28 193 63 404 77
+470 63 302 206 620 343 763 58 60 92 75 159 70 106 -8 194 -94 294 -287 142
+-276 221 -592 297 -1201 25 -199 30 -216 78 -262 48 -46 69 -56 133 -64 128
+-15 182 29 287 233 158 311 262 662 314 1063 18 142 18 726 -1 920 -12 130
+-12 155 3 239 23 131 62 222 165 380 224 343 341 617 397 926 27 148 25 372
+-4 488 -47 188 -131 338 -262 467 -179 176 -413 282 -690 311 -200 21 -379
+-13 -590 -111 -191 -88 -276 -110 -429 -110 -130 0 -249 29 -423 103 -84 36
+-183 74 -219 85 -136 42 -304 52 -450 27z"
               ></path>
-            </g></svg
-          >
-          <p class="ml-2">11002579</p>
+            </g>
+          </svg>
+          <p class="ml-2 text-sm sm:text-base">11002579</p>
         </div>
       </div>
     </div>
-    <div class="relative">
-      <div class="relative overflow-hidden rounded-full">
-        <Image
-          class="aspect-square relative mx-auto w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full zoom"
-          src={draTamara}
-          width={200}
-          height={200}
-          title="Foto de la doctora Tamara"
-          alt="Doctora en ortodoncia"
-        />
+
+    <div class="relative group">
+      <div
+        class="relative overflow-hidden rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl"
+      >
+        <div class="aspect-square overflow-hidden rounded-full">
+          <Image
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src={draTamara}
+            width={300}
+            height={300}
+            title="Foto de la doctora Tamara"
+            alt="Doctora en ortodoncia"
+          />
+        </div>
       </div>
-      <div class="mx-auto text-center">
-        <h3 class="font-semibold text-base">Dra. Tamara Rodríguez</h3>
-        <p class="text-base text-muted-400">Ortodoncia</p>
-        <div class="flex items-center justify-center">
+      <div class="mt-6 text-center">
+        <h3
+          class="text-lg font-semibold text-gray-800 mb-2"
+        >
+          Dra. Tamara Rodríguez
+        </h3>
+        <p class="text-sm sm:text-base lg:text-lg text-gray-600 mb-2">
+          Ortodoncia
+        </p>
+        <div class="flex items-center justify-center text-gray-600">
           <svg
+            class="w-4 h-4 sm:w-5 sm:h-5"
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
-            width="24px"
-            height="24px"
             viewBox="0 0 512.000000 512.000000"
             preserveAspectRatio="xMidYMid meet"
           >
             <g
               transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-              fill="#000000"
+              fill="currentColor"
               stroke="none"
             >
               <path
                 d="M1469 5065 c-154 -26 -360 -108 -490 -195 -194 -131 -345 -359 -396
-    -600 -26 -125 -24 -340 6 -489 58 -294 203 -626 399 -916 128 -188 171 -307
-    172 -467 0 -43 -9 -182 -21 -310 -50 -551 23 -1084 212 -1560 64 -161 181
-    -389 220 -428 65 -67 185 -78 274 -25 76 44 87 80 145 480 28 193 63 404 77
-    470 63 302 206 620 343 763 58 60 92 75 159 70 106 -8 194 -94 294 -287 142
-    -276 221 -592 297 -1201 25 -199 30 -216 78 -262 48 -46 69 -56 133 -64 128
-    -15 182 29 287 233 158 311 262 662 314 1063 18 142 18 726 -1 920 -12 130
-    -12 155 3 239 23 131 62 222 165 380 224 343 341 617 397 926 27 148 25 372
-    -4 488 -47 188 -131 338 -262 467 -179 176 -413 282 -690 311 -200 21 -379
-    -13 -590 -111 -191 -88 -276 -110 -429 -110 -130 0 -249 29 -423 103 -84 36
-    -183 74 -219 85 -136 42 -304 52 -450 27z"
+-600 -26 -125 -24 -340 6 -489 58 -294 203 -626 399 -916 128 -188 171 -307
+172 -467 0 -43 -9 -182 -21 -310 -50 -551 23 -1084 212 -1560 64 -161 181
+-389 220 -428 65 -67 185 -78 274 -25 76 44 87 80 145 480 28 193 63 404 77
+470 63 302 206 620 343 763 58 60 92 75 159 70 106 -8 194 -94 294 -287 142
+-276 221 -592 297 -1201 25 -199 30 -216 78 -262 48 -46 69 -56 133 -64 128
+-15 182 29 287 233 158 311 262 662 314 1063 18 142 18 726 -1 920 -12 130
+-12 155 3 239 23 131 62 222 165 380 224 343 341 617 397 926 27 148 25 372
+-4 488 -47 188 -131 338 -262 467 -179 176 -413 282 -690 311 -200 21 -379
+-13 -590 -111 -191 -88 -276 -110 -429 -110 -130 0 -249 29 -423 103 -84 36
+-183 74 -219 85 -136 42 -304 52 -450 27z"
               ></path>
-            </g></svg
-          >
-          <p class="ml-2">11002211</p>
+            </g>
+          </svg>
+          <p class="ml-2 text-sm sm:text-base">11002211</p>
         </div>
       </div>
     </div>
-    <div class="relative">
-      <div class="relative overflow-hidden rounded-full">
-        <Image
-          class="aspect-square relative mx-auto w-[150px] sm:w-[200px] h-[150px] sm:h-[200px] rounded-full zoom"
-          src={draIrene}
-          width={200}
-          height={200}
-          title="Foto de la doctora Irene"
-          alt="Doctora en implantología y cirugía"
-        />
+
+    <div class="relative group">
+      <div
+        class="relative overflow-hidden rounded-full shadow-lg transition-all duration-300 group-hover:shadow-xl"
+      >
+        <div class="aspect-square overflow-hidden rounded-full">
+          <Image
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            src={draIrene}
+            width={300}
+            height={300}
+            title="Foto de la doctora Irene"
+            alt="Doctora en implantología y cirugía"
+          />
+        </div>
       </div>
-      <div class="mx-auto text-center">
-        <h3 class="font-semibold text-base">Dra. Irene Ruiz</h3>
-        <p class="text-base text-muted-400">Implantología y Cirugía</p>
-        <div class="flex items-center justify-center">
+      <div class="mt-6 text-center">
+        <h3
+          class="text-lg font-semibold text-gray-800 mb-2"
+        >
+          Dra. Irene Ruiz
+        </h3>
+        <p class="text-sm sm:text-base lg:text-lg text-gray-600 mb-2">
+          Implantología y Cirugía
+        </p>
+        <div class="flex items-center justify-center text-gray-600">
           <svg
+            class="w-4 h-4 sm:w-5 sm:h-5"
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
-            width="24px"
-            height="24px"
             viewBox="0 0 512.000000 512.000000"
             preserveAspectRatio="xMidYMid meet"
           >
             <g
               transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-              fill="#000000"
+              fill="currentColor"
               stroke="none"
             >
               <path
                 d="M1469 5065 c-154 -26 -360 -108 -490 -195 -194 -131 -345 -359 -396
-    -600 -26 -125 -24 -340 6 -489 58 -294 203 -626 399 -916 128 -188 171 -307
-    172 -467 0 -43 -9 -182 -21 -310 -50 -551 23 -1084 212 -1560 64 -161 181
-    -389 220 -428 65 -67 185 -78 274 -25 76 44 87 80 145 480 28 193 63 404 77
-    470 63 302 206 620 343 763 58 60 92 75 159 70 106 -8 194 -94 294 -287 142
-    -276 221 -592 297 -1201 25 -199 30 -216 78 -262 48 -46 69 -56 133 -64 128
-    -15 182 29 287 233 158 311 262 662 314 1063 18 142 18 726 -1 920 -12 130
-    -12 155 3 239 23 131 62 222 165 380 224 343 341 617 397 926 27 148 25 372
-    -4 488 -47 188 -131 338 -262 467 -179 176 -413 282 -690 311 -200 21 -379
-    -13 -590 -111 -191 -88 -276 -110 -429 -110 -130 0 -249 29 -423 103 -84 36
-    -183 74 -219 85 -136 42 -304 52 -450 27z"
+-600 -26 -125 -24 -340 6 -489 58 -294 203 -626 399 -916 128 -188 171 -307
+172 -467 0 -43 -9 -182 -21 -310 -50 -551 23 -1084 212 -1560 64 -161 181
+-389 220 -428 65 -67 185 -78 274 -25 76 44 87 80 145 480 28 193 63 404 77
+470 63 302 206 620 343 763 58 60 92 75 159 70 106 -8 194 -94 294 -287 142
+-276 221 -592 297 -1201 25 -199 30 -216 78 -262 48 -46 69 -56 133 -64 128
+-15 182 29 287 233 158 311 262 662 314 1063 18 142 18 726 -1 920 -12 130
+-12 155 3 239 23 131 62 222 165 380 224 343 341 617 397 926 27 148 25 372
+-4 488 -47 188 -131 338 -262 467 -179 176 -413 282 -690 311 -200 21 -379
+-13 -590 -111 -191 -88 -276 -110 -429 -110 -130 0 -249 29 -423 103 -84 36
+-183 74 -219 85 -136 42 -304 52 -450 27z"
               ></path>
-            </g></svg
-          >
-          <p class="ml-2">11002397</p>
+            </g>
+          </svg>
+          <p class="ml-2 text-sm sm:text-base">11002397</p>
         </div>
       </div>
     </div>

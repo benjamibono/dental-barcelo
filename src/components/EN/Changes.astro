@@ -16,237 +16,249 @@ import {
 } from "../../images";
 ---
 
-<section id="changes" class="pt-28 px-4 sm:px-16">
-  <h2 class="flex justify-center pb-6 font-semibold text-3xl">
-    Transform your smile
-  </h2>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
-    <div
-      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
+<div class="w-full">
+  <section id="changes" class="py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center mb-12 sm:mb-16"
     >
-      <Image
-        src={sandraAntes}
-        alt="Before"
-        width={800}
-        height={450}
-        class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
-      />
-      <div class="absolute inset-0 w-auto h-auto overflow-hidden">
+      Transform your smile
+    </h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
+    >
+      <div
+        class="relative w-full overflow-hidden rounded-xl shadow-md aspect-[16/9] group"
+      >
         <Image
-          src={sandraDespues}
-          alt="After"
+          src={sandraAntes}
+          alt="Before dental treatment"
           width={800}
           height={450}
-          class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          class="absolute inset-0 w-full h-full object-cover before-image"
+        />
+        <div class="absolute inset-0 overflow-hidden">
+          <Image
+            src={sandraDespues}
+            alt="After dental treatment"
+            width={800}
+            height={450}
+            class="absolute inset-0 w-full h-full object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-1/2 w-0.5 sm:w-1 h-full bg-white z-10 divider"
+        >
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-8 sm:h-8 bg-white rounded-full shadow-lg z-20 handle"
+        >
+          <div class="absolute inset-0 flex items-center justify-center">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-primary" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6l6 6l1.41-1.41z"
+                transform="rotate(180 12 12)"></path>
+            </svg>
+          </div>
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-30 slider"
+          aria-label="Image comparison slider"
         />
       </div>
       <div
-        class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
       >
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
-      >
-      </div>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
-        aria-label="Image Comparison"
-      />
-    </div>
-    <div
-      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
-    >
-      <Image
-        src={ursuaAntes}
-        alt="Before"
-        width={800}
-        height={450}
-        class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
-      />
-      <div class="absolute inset-0 w-auto h-auto overflow-hidden">
         <Image
-          src={ursuaDespues}
-          alt="After"
+          src={ursuaAntes}
+          alt="Before"
           width={800}
           height={450}
-          class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
+        />
+        <div class="absolute inset-0 w-auto h-auto overflow-hidden">
+          <Image
+            src={ursuaDespues}
+            alt="After"
+            width={800}
+            height={450}
+            class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        >
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
+        >
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
+          aria-label="Image Comparison"
         />
       </div>
       <div
-        class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
       >
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
-      >
-      </div>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
-        aria-label="Image Comparison"
-      />
-    </div>
-    <div
-      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
-    >
-      <Image
-        src={ivanAntes}
-        alt="Before"
-        width={800}
-        height={450}
-        class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
-      />
-      <div class="absolute inset-0 w-auto h-auto overflow-hidden">
         <Image
-          src={ivanDespues}
-          alt="After"
+          src={ivanAntes}
+          alt="Before"
           width={800}
           height={450}
-          class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
+        />
+        <div class="absolute inset-0 w-auto h-auto overflow-hidden">
+          <Image
+            src={ivanDespues}
+            alt="After"
+            width={800}
+            height={450}
+            class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        >
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
+        >
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
+          aria-label="Image Comparison"
         />
       </div>
       <div
-        class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
       >
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
-      >
-      </div>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
-        aria-label="Image Comparison"
-      />
-    </div>
-    <div
-      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
-    >
-      <Image
-        src={pepeAntes}
-        alt="Before"
-        width={800}
-        height={450}
-        class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
-      />
-      <div class="absolute inset-0 w-auto h-auto overflow-hidden">
         <Image
-          src={pepeDespues}
-          alt="After"
+          src={pepeAntes}
+          alt="Before"
           width={800}
           height={450}
-          class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
+        />
+        <div class="absolute inset-0 w-auto h-auto overflow-hidden">
+          <Image
+            src={pepeDespues}
+            alt="After"
+            width={800}
+            height={450}
+            class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        >
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
+        >
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
+          aria-label="Image Comparison"
         />
       </div>
       <div
-        class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
       >
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
-      >
-      </div>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
-        aria-label="Image Comparison"
-      />
-    </div>
-    <div
-      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
-    >
-      <Image
-        src={tejadaAntes}
-        alt="Before"
-        width={800}
-        height={450}
-        class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
-      />
-      <div class="absolute inset-0 w-auto h-auto overflow-hidden">
         <Image
-          src={tejadaDespues}
-          alt="After"
+          src={tejadaAntes}
+          alt="Before"
           width={800}
           height={450}
-          class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
+        />
+        <div class="absolute inset-0 w-auto h-auto overflow-hidden">
+          <Image
+            src={tejadaDespues}
+            alt="After"
+            width={800}
+            height={450}
+            class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        >
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
+        >
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
+          aria-label="Image Comparison"
         />
       </div>
       <div
-        class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
       >
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
-      >
-      </div>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
-        aria-label="Image Comparison"
-      />
-    </div>
-    <div
-      class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg aspect-[16/9]"
-    >
-      <Image
-        src={infAntes}
-        alt="Before"
-        width={800}
-        height={450}
-        class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
-      />
-      <div class="absolute inset-0 w-auto h-auto overflow-hidden">
         <Image
-          src={infDespues}
-          alt="After"
+          src={infAntes}
+          alt="Before"
           width={800}
           height={450}
-          class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          class="aspect-auto absolute inset-0 w-auto h-auto object-cover before-image"
+        />
+        <div class="absolute inset-0 w-auto h-auto overflow-hidden">
+          <Image
+            src={infDespues}
+            alt="After"
+            width={800}
+            height={450}
+            class="aspect-auto absolute inset-0 w-auto h-auto object-cover [clip-path:inset(0_50%_0_0)] after-image"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
+        >
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
+        >
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
+          aria-label="Image Comparison"
         />
       </div>
-      <div
-        class="absolute top-0 left-1/2 w-[2px] h-full bg-white z-10 sm:w-[4px] divider"
-      >
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-white rounded-full z-20 sm:w-7 sm:h-7 handle"
-      >
-      </div>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        value="50"
-        class="absolute inset-0 w-auto h-auto opacity-0 cursor-pointer z-30 slider"
-        aria-label="Image Comparison"
-      />
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <style>
-  #changes {
-    @media (min-width: 1400px) {
-      margin: 0% 10%;
-    }
-  }
-
   .slider-animation {
     animation: slideEffect 4s ease;
   }
@@ -310,6 +322,19 @@ import {
       clip-path: inset(0 50% 0 0);
     }
   }
+
+  .group:hover .handle {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .handle {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
 </style>
 
 <script>
@@ -345,7 +370,8 @@ import {
       });
     },
     {
-      threshold: 0.1,
+      threshold: 0.2,
+      rootMargin: "50px",
     }
   );
 
@@ -354,27 +380,29 @@ import {
     observer.observe(changes);
   }
 
-  const sliders = document.querySelectorAll(".slider");
-  const dividers = document.querySelectorAll(".divider");
-  const handles = document.querySelectorAll(".handle");
-  const afterImages = document.querySelectorAll(".after-image");
+  const sliders = document.querySelectorAll<HTMLInputElement>(".slider");
+  const dividers = document.querySelectorAll<HTMLElement>(".divider");
+  const handles = document.querySelectorAll<HTMLElement>(".handle");
+  const afterImages = document.querySelectorAll<HTMLElement>(".after-image");
 
   sliders.forEach((slider, index) => {
     slider.addEventListener("input", (e) => {
-      const value = e.target.value;
-      afterImages[index].style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+      const target = e.target as HTMLInputElement;
+      const value = target.value;
+      afterImages[index].style.clipPath =
+        `inset(0 ${100 - Number(value)}% 0 0)`;
       dividers[index].style.left = `${value}%`;
       handles[index].style.left = `${value}%`;
     });
 
     slider.addEventListener("touchmove", (e) => {
-      const touch = (e as TouchEvent).touches[0];
+      const touch = e.touches[0];
       const rect = slider.getBoundingClientRect();
       const value = Math.max(
         0,
         Math.min(100, ((touch.clientX - rect.left) / rect.width) * 100)
       );
-      (slider as HTMLInputElement).value = value;
+      slider.value = String(value);
       afterImages[index].style.clipPath = `inset(0 ${100 - value}% 0 0)`;
       dividers[index].style.left = `${value}%`;
       handles[index].style.left = `${value}%`;

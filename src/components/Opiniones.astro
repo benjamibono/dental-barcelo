@@ -1,6 +1,8 @@
 <section class="px-8">
   <div>
-    <h3 class="flex justify-center py-10 font-semibold sm:text-xl">
+    <h3
+      class="flex justify-center py-10 font-semibold text-2xl sm:text-3xl text-primary"
+    >
       Nuestros pacientes nos respaldan
     </h3>
   </div>
@@ -455,6 +457,17 @@
               >
               </path>
             </svg>
+            <svg
+              class="w-5 h-5 text-yellow-400"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+              >
+              </path>
+            </svg>
           </div>
           <p class="text-base text-muted-400">
             "Llevo un año yendo y puedo decir que: Conchi es un amor de persona,
@@ -473,32 +486,34 @@
     <div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <dl
-          class="grid grid-cols-1 gap-x-8 gap-y-10 text-center sm:grid-cols-3"
+          class="grid grid-cols-1 gap-x-10 gap-y-10 text-center sm:grid-cols-3"
         >
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-primary">
+            <dt class="text-lg leading-7 text-primary font-medium">
               Años de experiencia
             </dt>
             <dd
-              class="order-first text-3xl font-semibold tracking-tight text-primary sm:text-5xl"
+              class="order-first text-xl md:text-4xl font-semibold tracking-tight text-primary"
             >
-              + 10
+              +10
             </dd>
           </div>
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-primary">Pacientes felices</dt>
+            <dt class="text-lg leading-7 text-primary font-medium">
+              Pacientes felices
+            </dt>
             <dd
-              class="order-first text-3xl font-semibold tracking-tight text-primary sm:text-5xl"
+              class="order-first text-xl md:text-4xl font-semibold tracking-tight text-primary"
             >
-              + 3600
+              +3600
             </dd>
           </div>
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-primary">
+            <dt class="text-lg leading-7 text-primary font-medium">
               Tratamientos exitosos
             </dt>
             <dd
-              class="order-first text-3xl font-semibold tracking-tight text-primary sm:text-5xl"
+              class="order-first text-xl md:text-4xl font-semibold tracking-tight text-primary"
             >
               +15000
             </dd>
@@ -513,18 +528,48 @@
     position: relative;
     padding: 10px 0px;
     border-radius: 8px;
-    margin: 0 15%;
-    height: 16rem; /* Fixed height to prevent CLS */
+    margin: 0 5%;
+    height: auto;
+    min-height: 16rem;
+    max-height: 20rem;
+    overflow: auto;
   }
   .review {
-    position: absolute;
+    position: relative;
     width: 100%;
+    max-height: 12rem;
+    overflow: auto;
   }
   .mySlides {
     display: none;
   }
   .myPhotos {
     display: none;
+  }
+  @media (max-width: 640px) {
+    .review-container {
+      margin: 0 2%;
+    }
+    .review h4 {
+      font-size: 0.875rem;
+    }
+    .review p {
+      font-size: 0.75rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    .review-container {
+      margin: 0 3%;
+    }
+    .review h4 {
+      font-size: 1rem;
+    }
+    .review p {
+      font-size: 0.875rem;
+    }
+    dl dd {
+      font-size: 3.5rem; /* Ajusta el tamaño de fuente para iPad */
+    }
   }
 </style>
 
@@ -535,7 +580,7 @@
   function opCarousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    if (x.length === 0) return; // Verifica si hay elementos con la clase "mySlides"
+    if (x.length === 0) return;
     for (i = 0; i < x.length; i++) {
       (x[i] as HTMLElement).style.display = "none";
     }
@@ -553,7 +598,7 @@
   function carousel() {
     var j;
     var y = document.getElementsByClassName("myPhotos");
-    if (y.length === 0) return; // Verifica si hay elementos con la clase "myPhotos"
+    if (y.length === 0) return;
     for (j = 0; j < y.length; j++) {
       (y[j] as HTMLElement).style.display = "none";
     }
