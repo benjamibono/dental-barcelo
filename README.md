@@ -1,18 +1,19 @@
 🦷 Barcelo Dental Clinic Website
 A modern and professional web platform built with Astro and TypeScript, providing a complete digital experience for patients and visitors.
 
+
 ✨ Features
-🏥 Detailed Dental Services
-📅 Online Appointment System
-👥 Patient Testimonials
-📱 Fully Responsive Design
-🌐 Multilingual Support (ES/EN)
-📍 Location and Contact Information
-🎨 Modern and Clean Interface
-💬 Contact Form
-🏆 Credentials and Certifications
-📸 Case Gallery
-⚡ Fast and Optimized Loading
+- 🏥 Detailed Dental Services
+- 📅 Online Appointment System
+- 👥 Patient Testimonials
+- 📱 Fully Responsive Design
+- 🌐 Multilingual Support (ES/EN)
+- 📍 Location and Contact Information
+- 🎨 Modern and Clean Interface
+- 💬 Contact Form
+- 🏆 Credentials and Certifications
+- 📸 Case Gallery
+- ⚡ Fast and Optimized Loading
 
 🚀 Technologies Used
 
