@@ -9,24 +9,45 @@ interface Props {
 
 const { title } = Astro.props;
 const lang = title.includes("Clínica") ? "es" : "en";
+const description =
+  lang === "es"
+    ? "Clínica Dental Barceló en El Puerto de Santa María. Servicios completos de odontología: implantes, ortodoncia, estética dental y más. Cuidamos tu sonrisa con profesionalidad y tecnología avanzada."
+    : "Barceló Dental Clinic in El Puerto de Santa María. Complete dental services: implants, orthodontics, dental aesthetics and more. We take care of your smile with professionalism and advanced technology.";
+const websiteUrl = "https://dentalbarcelo.com";
+const imageUrl = `${websiteUrl}/images/clinica-dental-barcelo.webp`;
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Web de la Clínica Dental Barcelo, Dentista en El Puerto de Santa María donde encontrarás todos los servicios de odontología y ortodoncia que necesites al mejor precio."
-    />
+
+    <!-- HTML Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <meta
       name="keywords"
-      content="Dentista, Ortodoncista, El Puerto de Santa María"
+      content="Dentista, Ortodoncista, El Puerto de Santa María, Implantes Dentales, Estética Dental"
     />
-    <link rel="canonical" href="https://dentalbarcelo.com" />
+    <link rel="canonical" href={websiteUrl} />
     <link rel="icon" href="/favicon.svg" type="image/x-icon" />
-    <title>{title}</title>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content={websiteUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="dentalbarcelo.com" />
+    <meta property="twitter:url" content={websiteUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+
     <script src="/scripts/activeNavLinks.js" defer></script>
   </head>
   <body>
