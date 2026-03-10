@@ -13,15 +13,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.5",
-    "@astrojs/vercel": "^8.2.11",
+    "@astrojs/tailwind": "^6.0.2",
+    "@astrojs/vercel": "^10.0.0",
     "@fontsource-variable/montserrat": "^5.0.19",
-    "@midudev/tailwind-animations": "^0.0.7",
+    "@midudev/tailwind-animations": "^1.0.1",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "astro": "^5.18.0",
-    "sharp": "^0.33.5",
-    "tailwindcss": "^3.4.3"
+    "astro": "^6.0.0",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.1"
   },
   "overrides": {
     "path-to-regexp": "6.3.0"
