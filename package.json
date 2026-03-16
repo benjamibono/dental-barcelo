@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "engines": {
-    "node": "20.x"
+    "node": ">=22.12.0"
   },
   "scripts": {
     "dev": "astro dev",
@@ -13,10 +13,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.2",
     "@astrojs/vercel": "^10.0.0",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@midudev/tailwind-animations": "^1.0.1",
+    "@tailwindcss/vite": "^4.2.1",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "astro": "^6.0.4",
