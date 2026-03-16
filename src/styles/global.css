@@ -1,6 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tailwind-animations";
+
+@theme {
+  --color-custom-dark: #2e211c;
+  --color-custom-brown: #574137;
+  --color-custom-accent: #738ea0;
+  --color-custom-light: #f1ece3;
+  --color-slate-500: #64748b;
+
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-30: 7.5rem;
+
+  --max-width-container: 1440px;
+  --max-width-content: 1140px;
+
+  --breakpoint-xs: 360px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1536px;
+  --breakpoint-xxxl: 1920px;
+}
 
 :root {
   --color-primary: #2e211c;
