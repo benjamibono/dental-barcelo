@@ -13,7 +13,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^10.0.0",
+    "@astrojs/vercel": "^10.0.2",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@midudev/tailwind-animations": "^1.0.1",
     "@tailwindcss/vite": "^4.2.1",
