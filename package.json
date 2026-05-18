@@ -13,13 +13,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^10.0.6",
+    "@astrojs/vercel": "^10.0.7",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@midudev/tailwind-animations": "^1.0.1",
     "@tailwindcss/vite": "^4.3.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "astro": "^6.3.1",
+    "astro": "^6.3.3",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.2.1"
   },
