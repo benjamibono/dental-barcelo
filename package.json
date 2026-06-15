@@ -16,11 +16,11 @@
     "@astrojs/vercel": "^10.0.8",
     "@fontsource-variable/montserrat": "^5.0.19",
     "@midudev/tailwind-animations": "^1.0.1",
-    "@tailwindcss/vite": "^4.3.0",
+    "@tailwindcss/vite": "^4.3.1",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "astro": "^6.4.4",
-    "sharp": "^0.34.5",
+    "astro": "^6.4.6",
+    "sharp": "^0.35.1",
     "tailwindcss": "^4.2.1"
   },
   "overrides": {
