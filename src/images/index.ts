@@ -9,18 +9,18 @@ import esterilizacion from "../assets/esterilizacion.webp";
 import instrumentos from "../assets/instrumentos.webp";
 import ultrasonido from "../assets/ultrasonido.webp";
 import radiografia from "../assets/radiografia.webp";
-import sandraAntes from "../assets/SANDRA ANTES.webp";
-import sandraDespues from "../assets/SANDRA DESPUES.webp";
-import ursuaAntes from "../assets/URSUA ANTES.webp";
-import ursuaDespues from "../assets/URSUA DESPUES.webp";
-import ivanAntes from "../assets/IVAN ANTES.webp";
-import ivanDespues from "../assets/IVAN DESPUES.webp";
-import pepeAntes from "../assets/PEPE ANTES.webp";
-import pepeDespues from "../assets/PEPE DESPUES.webp";
-import tejadaAntes from "../assets/TEJADA ANTES.webp";
-import tejadaDespues from "../assets/TEJADA DESPUES.webp";
-import infAntes from "../assets/INF ANTES.webp";
-import infDespues from "../assets/INF DESPUES.webp";
+import sandraAntes from "../assets/caso-1-antes.webp";
+import sandraDespues from "../assets/caso-1-despues.webp";
+import ursuaAntes from "../assets/caso-2-antes.webp";
+import ursuaDespues from "../assets/caso-2-despues.webp";
+import ivanAntes from "../assets/caso-3-antes.webp";
+import ivanDespues from "../assets/caso-3-despues.webp";
+import pepeAntes from "../assets/caso-4-antes.webp";
+import pepeDespues from "../assets/caso-4-despues.webp";
+import tejadaAntes from "../assets/caso-5-antes.webp";
+import tejadaDespues from "../assets/caso-5-despues.webp";
+import infAntes from "../assets/caso-6-antes.webp";
+import infDespues from "../assets/caso-6-despues.webp";
 
 export {
   conchi,

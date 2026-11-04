@@ -67,7 +67,8 @@ import { logo } from "../images";
                 aria-haspopup="true"
                 aria-expanded="false"
                 aria-label="Cambiar idioma"
-                onclick="document.getElementById('language-menu').classList.toggle('hidden')"
+                aria-controls="language-menu"
+                onclick="document.getElementById('language-menu').classList.toggle('hidden'); this.setAttribute('aria-expanded', String(!document.getElementById('language-menu').classList.contains('hidden')))"
               >
                 🇪🇸 <span class="ml-1">▼</span>
               </button>
@@ -77,8 +78,7 @@ import { logo } from "../images";
               >
                 <a
                   href="/en"
-                  class="block px-4 py-2 text-sm hover:bg-gray-200 hover:rounded-md"
-                  >🇬🇧</a
+                  class="block px-4 py-2 text-sm hover:bg-gray-200 hover:rounded-md" aria-label="English" lang="en">🇬🇧</a
                 >
               </div>
             </li>
@@ -89,7 +89,9 @@ import { logo } from "../images";
           <button
             class="rounded p-2 text-gray-600 transition"
             aria-label="Abrir menú"
-            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); this.setAttribute('aria-expanded', String(!document.getElementById('mobile-menu').classList.contains('hidden')))"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

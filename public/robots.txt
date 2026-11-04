@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
 Allow: /
 
-Sitemap: http://www.dentalbarcelo.com/sitemap.xml
+Sitemap: https://www.dentalbarcelo.com/sitemap-index.xml
