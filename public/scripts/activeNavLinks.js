@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cambiosSection = document.getElementById("cambios");
     const changesSection = document.getElementById("changes");
     const footerSection = document.getElementById("footer");
-    const footerEnSection = document.getElementById("footeren");
+    const footerEnSection = document.getElementById("footer-en");
 
     let currentSection = "";
 
